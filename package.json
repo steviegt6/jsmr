@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Steviegt6/jsmr#readme",
   "dependencies": {
+    "shift-ast": "^6.1.0",
     "shift-refactor": "^2.0.0"
   }
 }
