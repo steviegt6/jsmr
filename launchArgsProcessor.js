@@ -10,11 +10,11 @@ module.exports.getArgumentIndex = function(arg) {
 }
 
 module.exports.doesArgumentExist = function(arg) {
-    return getArgumentIndex(arg) != -1
+    return module.exports.getArgumentIndex(arg) != -1
 }
 
 module.exports.getArgumentValue = function(arg) {
-    let argIndex = getArgumentIndex(arg)
+    let argIndex = module.exports.getArgumentIndex(arg)
 
     if (argIndex == -1) {
         return null
