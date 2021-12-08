@@ -1,7 +1,3 @@
-module.exports.doesArgumentExist = function(arg) {
-    return getArgumentIndex(arg) != -1
-}
-
 // Returns the index of the argument, otherwise -1.
 module.exports.getArgumentIndex = function(arg) {
     process.argv.forEach(function (val, index, array) {
@@ -11,6 +7,10 @@ module.exports.getArgumentIndex = function(arg) {
     })
 
     return -1
+}
+
+module.exports.doesArgumentExist = function(arg) {
+    return getArgumentIndex(arg) != -1
 }
 
 module.exports.getArgumentValue = function(arg) {
