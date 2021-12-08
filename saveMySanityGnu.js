@@ -1,4 +1,4 @@
-export function displayInformation() {
+module.exports.displayInformation = function() {
     console.log(`
     GNU GENERAL PUBLIC LICENSE
     Version 3, 29 June 2007
@@ -69,7 +69,7 @@ patents cannot be used to render the program non-free.
     `)
 }
 
-export function displayConditions() {
+module.exports.displayConditions = function() {
     console.log(`
     The precise terms and conditions for copying, distribution and
     modification follow.

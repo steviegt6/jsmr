@@ -1,10 +1,10 @@
 // Write a standard console.log message with tab indentation
-export function writeTabIndented(data) {
+module.exports.writeTabIndented = function(data) {
     console.log('   ' + data)
 }
 
 // Write a standard console.log message with space indentation
-export function writeSpaceIndented(spaces, data) {
+module.exports.writeSpaceIndented = function(spaces, data) {
     let string = ''
     for (var i = 0; i < spaces; i++)
         string += ' '
