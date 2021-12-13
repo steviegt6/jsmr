@@ -21,3 +21,5 @@ The library we're using, `shift-refactor`, parsers existing JavaScript code and 
 We can use this knowledge to safely do many things.
 
 While this program is intended to be used for member deobfuscation through remapping, it is more goal to make this versatile enough to act as an AST visitor which would let us add to and remove from the AST without writing explicit JS code, which could be huge!
+
+Using JSON may not be optimal for this, however. It might be more worthwhile to use our own text-based file format that doesn't rely on the unreadableness and unfriendly nature of JSON.
